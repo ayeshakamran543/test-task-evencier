@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 /// A reusable bottom navigation bar built from a list of
@@ -26,19 +25,16 @@ class BottomNavBar extends StatelessWidget {
           decoration: BoxDecoration(color: Color(0xFF404040)),
           child: SizedBox(height: 0.5, width: double.infinity),
         ),
-        Padding(
-          padding: EdgeInsets.only(top: 6.h),
-          child: NavigationBar(
-            selectedIndex: selectedIndex,
-            onDestinationSelected: onDestinationSelected,
-            destinations: [
-              for (final item in items)
-                NavigationDestination(
-                  icon: _NavIcon(item.svgAsset),
-                  label: item.label,
-                ),
-            ],
-          ),
+        NavigationBar(
+          selectedIndex: selectedIndex,
+          onDestinationSelected: onDestinationSelected,
+          destinations: [
+            for (final item in items)
+              NavigationDestination(
+                icon: _NavIcon(item.svgAsset),
+                label: item.label,
+              ),
+          ],
         ),
       ],
     );

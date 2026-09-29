@@ -4,15 +4,13 @@ A Flutter fitness/wellness app featuring a home dashboard, mood tracker, trainin
 
 ## Dependencies Used & Why
 
-| Package | Purpose |
-|---|---|
-| [provider](https://pub.dev/packages/provider) | State management across the app (controllers for home, mood, and schedule screens). |
+| Package                                                           | Purpose                                                                                              |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [provider](https://pub.dev/packages/provider)                     | State management across the app (controllers for home, mood, and schedule screens).                  |
 | [shared_preferences](https://pub.dev/packages/shared_preferences) | Lightweight local persistence for storing user preferences (e.g. theme, onboarding state) on-device. |
-| [intl](https://pub.dev/packages/intl) | Date formatting and localization utilities used throughout the calendar and scheduling features. |
-| [flutter_screenutil](https://pub.dev/packages/flutter_screenutil) | Screen adaptation so UI scales consistently across different device sizes and resolutions. |
-| [flutter_svg](https://pub.dev/packages/flutter_svg) | Rendering SVG icons and illustrations used in the app's UI. |
-| [cupertino_icons](https://pub.dev/packages/cupertino_icons) | iOS-style icon set used alongside Material icons. |
-| [flutter_lints](https://pub.dev/packages/flutter_lints) (dev) | Recommended lint rules to enforce consistent, high-quality Dart code. |
+| [intl](https://pub.dev/packages/intl)                             | Date formatting and localization utilities used throughout the calendar and scheduling features.     |
+| [flutter_screenutil](https://pub.dev/packages/flutter_screenutil) | Screen adaptation so UI scales consistently across different device sizes and resolutions.           |
+| [flutter_svg](https://pub.dev/packages/flutter_svg)               | Rendering SVG icons and illustrations used in the app's UI.                                          |
 
 ## Project Structure
 
@@ -41,12 +39,15 @@ lib/
 
 ## App Screenshots
 
-[View Screenshots](https://github.com/username/project-name/tree/main/screenshots)
+| Home | Quick Workouts | Training Plan | Mood |
+| --- | --- | --- | --- |
+| <img src="screenshots/home_dark.png" width="200" alt="Home dashboard - dark theme" /> | <img src="screenshots/home_quick_workout_dark.png" width="200" alt="Quick workouts and blogs - dark theme" /> | <img src="screenshots/plan_dark.png" width="200" alt="Training calendar - dark theme" /> | <img src="screenshots/mood_dark.png" width="200" alt="Mood tracker - dark theme" /> |
+| <img src="screenshots/home_light.png" width="200" alt="Home dashboard - light theme" /> | <img src="screenshots/home_calendar_dark.png" width="200" alt="Date picker on home screen" /> | <img src="screenshots/plan_light.png" width="200" alt="Training calendar - light theme" /> | <img src="screenshots/mood_light.png" width="200" alt="Mood tracker - light theme" /> |
 
 ## App Video
 
-[Watch App Demo Video](https://drive.google.com/file/d/xxxx/view)
+[Watch App Demo Video](https://drive.google.com/drive/folders/1d5CeQ7A02zH3OSRlAgJpMmF-BziRPuNb?usp=sharing)
 
 ## App APK
 
-[Download APK](https://github.com/username/project-name/releases/download/v1.0/app-release.apk)
+[Download APK](https://github.com/ayeshakamran543/evencir-fitness/releases/download/v1.0/app-release.apk)
