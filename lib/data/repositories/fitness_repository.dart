@@ -3,11 +3,6 @@ import '../models/mood.dart';
 import '../models/training_program.dart';
 import '../models/workout.dart';
 
-/// The only thing the UI layer knows about data.
-///
-/// The app ships with [MockFitnessRepository]. A Firebase or REST version
-/// can implement this same interface without touching any widget or
-/// controller.
 abstract class FitnessRepository {
   Future<TrainingProgram> fetchProgram();
 

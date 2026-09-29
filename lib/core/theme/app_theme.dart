@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'app_colors.dart';
 
-/// Builds [ThemeData] for both brightness modes from the same token set.
 class AppTheme {
   AppTheme._();
 
@@ -51,7 +50,7 @@ class AppTheme {
           return TextStyle(
             fontFamily: 'Mulish',
             fontSize: 14.sp,
-            height: 1.2, // 16.8px line-height at 14px font size
+            height: 1.2,
             letterSpacing: 0,
             fontWeight: selected ? FontWeight.w600 : FontWeight.w400,
             color: selected ? c.textPrimary : const Color(0xFF66667E),

@@ -13,7 +13,6 @@ enum WorkoutCategory {
   final String label;
   final IconData icon;
 
-  /// Optional svg replacement for [icon]. Falls back to [icon] when null.
   final String? svgIcon;
 }
 
@@ -31,7 +30,6 @@ class Workout {
   final String title;
   final WorkoutCategory category;
 
-  /// Scheduled day (time of day is ignored).
   final DateTime date;
   final int minMinutes;
   final int maxMinutes;

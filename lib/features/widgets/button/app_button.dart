@@ -6,8 +6,6 @@ import '../../../core/theme/app_typography.dart';
 
 part 'app_button_enums.dart';
 
-/// A reusable, theme-aware button with a primary (filled) and an
-/// outlined style.
 class AppButton extends StatelessWidget {
   const AppButton({
     required this.label,

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-/// A reusable bottom navigation bar built from a list of
-/// [BottomNavItem]s, styled to follow [AppTheme]'s border and
-/// selected/unselected nav colors.
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     super.key,
@@ -41,7 +38,6 @@ class BottomNavBar extends StatelessWidget {
   }
 }
 
-/// Describes a single destination in a [BottomNavBar].
 class BottomNavItem {
   const BottomNavItem({required this.svgAsset, required this.label});
 
@@ -49,9 +45,6 @@ class BottomNavItem {
   final String label;
 }
 
-/// A bottom-nav SVG icon that picks up its color and size from the
-/// ambient [IconTheme], so it follows [AppTheme]'s selected/unselected
-/// nav bar styling exactly like a built-in [Icon] would.
 class _NavIcon extends StatelessWidget {
   const _NavIcon(this.asset);
 

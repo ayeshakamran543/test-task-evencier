@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/theme/app_colors.dart';
 
-/// The pill-shaped drag handle shown at the top of modal bottom sheets.
 class SheetDragHandle extends StatelessWidget {
   const SheetDragHandle({super.key});
 

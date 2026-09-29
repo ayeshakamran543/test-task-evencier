@@ -1,6 +1,3 @@
-/// Moods placed around the mood wheel.
-///
-/// [centerDegrees] is measured clockwise from 12 o'clock.
 enum Mood {
   calm('Calm', 60),
   content('Content', 150),
@@ -12,7 +9,6 @@ enum Mood {
   final String label;
   final double centerDegrees;
 
-  /// The mood whose segment is closest to [degrees].
   static Mood fromDegrees(double degrees) {
     final angle = degrees % 360;
     var best = Mood.calm;

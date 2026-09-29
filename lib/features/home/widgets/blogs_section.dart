@@ -15,7 +15,6 @@ const _blogs = [
   _Blog('Is Diet Really Important?', 'assets/pngs/blogs_bg2.png'),
 ];
 
-/// Horizontally scrolling blog teaser cards shown on the home screen.
 class BlogsSection extends StatelessWidget {
   const BlogsSection({super.key, this.onTap});
 

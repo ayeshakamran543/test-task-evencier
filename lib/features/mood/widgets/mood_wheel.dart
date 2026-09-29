@@ -8,8 +8,6 @@ import '../../../core/theme/app_colors.dart';
 import '../../../data/models/mood.dart';
 import 'mood_palette.dart';
 
-/// Circular mood picker. Drag (or tap) anywhere on the ring to move the
-/// knob. Screen readers get increase/decrease actions instead.
 class MoodWheel extends StatelessWidget {
   const MoodWheel({
     super.key,
@@ -31,7 +29,7 @@ class MoodWheel extends StatelessWidget {
   void _handle(Offset local) {
     final dx = local.dx - size / 2;
     final dy = local.dy - size / 2;
-    // Ignore touches in the middle of the face.
+
     if (math.sqrt(dx * dx + dy * dy) < size * 0.2) return;
     final angle = math.atan2(dx, -dy) * 180 / math.pi;
     onChanged(angle < 0 ? angle + 360 : angle);
@@ -77,8 +75,7 @@ class MoodWheel extends StatelessWidget {
                         Mood.calm.color,
                       ],
                       stops: const [0, 0.25, 0.5, 0.75, 1],
-                      // SweepGradient starts at 3 o'clock; rotate so the
-                      // calm colour sits at its angle from 12 o'clock.
+
                       transform: GradientRotation(
                         -math.pi / 2 + Mood.calm.centerDegrees * math.pi / 180,
                       ),

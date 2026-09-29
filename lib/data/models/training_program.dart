@@ -8,7 +8,6 @@ class TrainingProgram {
     required this.workouts,
   });
 
-  /// Monday of week 1.
   final DateTime start;
   final int totalWeeks;
   final List<Workout> workouts;
@@ -19,7 +18,6 @@ class ProgramWeek {
 
   final int number;
 
-  /// Monday of this week.
   final DateTime start;
 
   List<DateTime> get days => AppDates.weekOf(start);

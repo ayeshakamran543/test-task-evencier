@@ -36,7 +36,7 @@ class _MainShellState extends State<MainShell> {
     ];
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
-      // Status bar icons follow the theme.
+
       value: isDark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
       child: Scaffold(
         body: IndexedStack(index: _current.index, children: pages),

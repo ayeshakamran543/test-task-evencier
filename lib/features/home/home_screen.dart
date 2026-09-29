@@ -220,15 +220,13 @@ class _Header extends StatelessWidget {
             ),
           ),
         ),
-        // Balances the notification bell so the week label stays centered.
+
         SizedBox(width: 48.w),
       ],
     );
   }
 }
 
-/// Toggles light/dark mode. Lives next to the "Workouts" temperature
-/// reading rather than the app bar.
 class _ThemeToggle extends StatelessWidget {
   const _ThemeToggle();
 

@@ -7,7 +7,6 @@ import '../../../core/theme/app_typography.dart';
 import '../../../data/models/workout.dart';
 import 'workout_tile.dart';
 
-/// One day on the training calendar. Accepts dropped workouts.
 class DayRow extends StatelessWidget {
   const DayRow({
     super.key,

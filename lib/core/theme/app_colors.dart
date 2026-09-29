@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Semantic colour tokens for the app.
-///
-/// Widgets never hard-code colours. They read these tokens through
-/// `context.colors`, so every screen supports light and dark mode without
-/// any per-widget `if (isDark)` checks.
 @immutable
 class AppColors extends ThemeExtension<AppColors> {
   const AppColors({

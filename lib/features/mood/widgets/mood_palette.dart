@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../data/models/mood.dart';
 
-/// Wheel colours. These are illustration colours, identical in both
-/// themes, like the face artwork.
 extension MoodPalette on Mood {
   Color get color {
     switch (this) {
@@ -18,7 +16,6 @@ extension MoodPalette on Mood {
     }
   }
 
-  /// Face icon shown at the centre of the wheel for this mood.
   String get iconAsset {
     switch (this) {
       case Mood.calm:

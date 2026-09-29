@@ -20,7 +20,6 @@ const _workouts = [
   _QuickWorkout('Shoulder Shockwave', 'assets/pngs/QW_bg6.png'),
 ];
 
-/// A 2-column grid of quick-start workout shortcuts.
 class QuickWorkoutGrid extends StatelessWidget {
   const QuickWorkoutGrid({super.key, this.onSelected});
 

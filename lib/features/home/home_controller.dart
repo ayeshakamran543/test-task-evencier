@@ -51,8 +51,6 @@ class HomeController extends ChangeNotifier {
     load();
   }
 
-  /// Optimistic update: the UI changes instantly and rolls back if the
-  /// repository call fails.
   Future<void> logWater(int ml) async {
     final previous = _insights;
     if (previous == null) return;

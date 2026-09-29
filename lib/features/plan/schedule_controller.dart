@@ -7,10 +7,6 @@ import '../../data/models/training_program.dart';
 import '../../data/models/workout.dart';
 import '../../data/repositories/fitness_repository.dart';
 
-/// Single source of truth for the training plan, shared by the Home and
-/// Plan screens so a workout moved on the plan shows up on Home at once.
-///
-/// Edits go to a draft; [save] commits them, [discard] throws them away.
 class ScheduleController extends ChangeNotifier {
   ScheduleController(this._repository, {DateTime Function()? clock})
     : _clock = clock ?? DateTime.now;
@@ -74,7 +70,6 @@ class ScheduleController extends ChangeNotifier {
     return math.min(math.max(week, 1), _totalWeeks);
   }
 
-  /// Planned time for a week, using the upper bound of each workout.
   int totalMinutesFor(ProgramWeek week) => _draft
       .where((w) => week.contains(w.date))
       .fold<int>(0, (sum, w) => sum + w.maxMinutes);

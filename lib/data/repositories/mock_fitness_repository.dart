@@ -5,8 +5,6 @@ import '../models/training_program.dart';
 import '../models/workout.dart';
 import 'fitness_repository.dart';
 
-/// In-memory data source seeded relative to "today", so the demo always
-/// looks alive whatever day it is opened.
 class MockFitnessRepository implements FitnessRepository {
   MockFitnessRepository({
     DateTime Function()? clock,
@@ -15,7 +13,6 @@ class MockFitnessRepository implements FitnessRepository {
 
   final DateTime Function() _clock;
 
-  /// Simulated network delay, used to show loading states in the demo.
   final Duration latency;
 
   static const totalWeeks = 8;
@@ -26,7 +23,6 @@ class MockFitnessRepository implements FitnessRepository {
 
   DateTime get _today => AppDates.dateOnly(_clock());
 
-  /// The program started last Monday-week, so "now" is week 2 of 8.
   DateTime get _programStart {
     final monday = AppDates.startOfWeek(_today);
     return DateTime(monday.year, monday.month, monday.day - 7);

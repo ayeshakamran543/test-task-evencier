@@ -13,10 +13,6 @@ import '../../../data/models/workout.dart';
 import '../../widgets/sheet_drag_handle.dart';
 import '../schedule_controller.dart';
 
-/// A workout on the training calendar.
-///
-/// Drag the handle icon to move it to another day instantly, or tap the
-/// tile for a "Move to" sheet (the accessible alternative to dragging).
 class DraggableWorkoutTile extends StatelessWidget {
   const DraggableWorkoutTile({super.key, required this.workout});
 

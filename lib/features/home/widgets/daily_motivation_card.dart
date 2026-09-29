@@ -5,7 +5,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 
-/// A motivational quote card shown below the home screen's insights.
 class DailyMotivationCard extends StatelessWidget {
   const DailyMotivationCard({
     super.key,

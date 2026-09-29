@@ -14,7 +14,6 @@ class MoodController extends ChangeNotifier {
   bool _isSubmitting = false;
   bool _disposed = false;
 
-  /// Knob position, clockwise from 12 o'clock.
   double get degrees => _degrees;
   Mood get mood => Mood.fromDegrees(_degrees);
   bool get isSubmitting => _isSubmitting;
