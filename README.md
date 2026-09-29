@@ -50,4 +50,4 @@ lib/
 
 ## App APK
 
-[Download APK](https://github.com/ayeshakamran543/evencir-fitness/releases/download/v1.0/app-release.apk)
+[Download APK](https://github.com/ayeshakamran543/test-task-evencier/releases/download/v1.0/app-release.apk)
